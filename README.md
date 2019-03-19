@@ -1,2 +1,2 @@
 # demoRepository
-for fake json
+for Fake JSON API
