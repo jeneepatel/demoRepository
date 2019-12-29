@@ -1,0 +1,27 @@
+[{
+"category": "Finance",
+"items": [{
+ "subCategory": "MMM-cryptocurrency",
+"name": "MMM-cryptocurrency",
+"description": "Lorem Ipsum"
+}, {
+ "subCategory": "MMM-Stock",
+"name": "MMM-Stock",
+    "description": "Lorem Ipsum"
+}]
+}, {
+"category": "Weather",
+"items": [{
+"name": "MMM-3Day-Forecast",
+"description": "Lorem Ipsum",
+"gitRep":"https://github.com/mochman/MMM-GPSWeather.git"
+}, {
+"name": "MMM-AirQuality",
+    "description": "Lorem Ipsum",
+    "gitRep":"https://github.com/mochman/MMM-GPSWeather.git"
+}, {
+"name": "MMM-GPSWeather",
+"description": "Lorem Ipsum",
+"gitRep":"https://github.com/mochman/MMM-GPSWeather.git"
+}]
+}]

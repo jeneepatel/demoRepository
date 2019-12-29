@@ -1,56 +1,27 @@
-<div class="row">
-    <div class="col-md-6"></div>
-    <div class="col-md-6">
-        <div class="card">
-            <div class="card-body">
-                
-                <ngb-tabset type="pills">
-                  <ngb-tab title="Home">
-                    <ng-template ngbTabContent>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="row"  *ngFor="let card of data;">
-                                    <!-- column -->
-                                    <div class="col-lg-3 col-md-6">
-                                        <!-- Card -->
-                                        <div class="card">
-                                            <img class="card-img-top img-responsive" src="assets/images/big/img1.jpg" alt="Card image cap">
-                                           {{card.gitRep}}
-                                            <div class="card-body">
-                                                <h4 class="card-title">{{card.name}}</h4>
-                                                <p class="card-text">{{card.description}}</p>
-                                                <button type="submit" class="btn btn-primary" (click)="sendDetails(card.name,card.gitRep);">Install</button>
-                                            </div>
-                                        </div>
-                                        <!-- Card -->
-                                    </div>
-                                    <!-- column -->
-                                    <!-- column -->
-                                    
-                                   
-                                </div>
-                                <!-- Row -->
-                            </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="row">
+                <!-- column -->
+                <div class="col-lg-3 col-md-6" *ngFor="let card of data;">
+                    <!-- Card -->
+                    <div class="card">
+                        <img class="card-img-top img-responsive" src="assets/images/big/img1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">{{card.name}}</h4>
+                            <p class="card-text">{{card.description}}</p>
+                            <button type="submit" class="btn btn-primary" (click)="sendDetails(card.name,card.gitRep);">Install</button>
                         </div>
-                        <!-- End Row -->
-                            
-                    </ng-template>
-                  </ngb-tab>
-                  <ngb-tab>
-                    <ng-template ngbTabTitle><b>Categories</b></ng-template>
-                    <ng-template ngbTabContent>
-                      <p  class="p-t-20">Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table
-                      craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl
-                      cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia
-                      yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean
-                      shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero
-                      sint qui sapiente accusamus tattooed echo park.</p>
-                    </ng-template>
-                  </ngb-tab>
-                 
-                </ngb-tabset>
-  			</div>
+                    </div>
+                    <!-- Card -->
+                </div>
+                <!-- column -->
+                <!-- column -->
+                
+               
+            </div>
+            <!-- Row -->
         </div>
     </div>
-    
-</div>
+    <!-- End Row -->
+        
