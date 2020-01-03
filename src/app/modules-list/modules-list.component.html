@@ -1,0 +1,5 @@
+<div *ngFor="let module of modulesList;">
+<mat-action-list *ngFor="let item of module.items;">
+    <button mat-list-item (click)="getDetails(item.name)"> {{item.name}} </button>
+</mat-action-list>
+</div>

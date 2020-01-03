@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
     console.log(gitRepository);
     //var test="{\"name\":+"\""+moduleName+"\",\"giturl\": "+gitRepository+"}";
     var test2="{\"modulename\":\""+moduleName+"\",\"giturl\":\""+gitRepository+"\"}";
-    this.http.post('http://192.168.0.106:3000',test2).subscribe((data)=>
+    this.http.post('http://localhost:3000',test2).subscribe((data)=>
     {                                         
       return data;
     })

@@ -30,6 +30,10 @@ import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
 import { HomeComponent } from './home/home.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { MainComponent } from './main/main.component';
+import { ModulesListComponent } from './modules-list/modules-list.component';
+import { DemoMaterialModule } from './demo-material-module';
+import { ModuleDetailsComponent } from './module-details/module-details.component';
+import { MyprofileComponent } from './myprofile/myprofile.component';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
 	suppressScrollX: true,
@@ -48,7 +52,10 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
 		BreadcrumbComponent,
 		HomeComponent,
 		CategoriesComponent,
-		MainComponent
+		MainComponent,
+		ModulesListComponent,
+		ModuleDetailsComponent,
+		MyprofileComponent
 	],
 	imports: [
 		CommonModule,
@@ -58,6 +65,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
 		HttpClientModule,
 		PerfectScrollbarModule,
 		NgbModule,
+		DemoMaterialModule,
 		RouterModule.forRoot(Approutes, { useHash: false })
 	],
 	providers: [

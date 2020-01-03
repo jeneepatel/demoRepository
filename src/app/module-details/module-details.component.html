@@ -3,14 +3,14 @@
         <div class="col-12">
             <div class="row">
                 <!-- column -->
-                <div class="col-lg-3 col-md-6" *ngFor="let card of data;">
+                <div class="col-lg-3 col-md-6">
                     <!-- Card -->
                     <div class="card">
                         <img class="card-img-top img-responsive" src="assets/images/big/img1.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h4 class="card-title">{{card.name}}</h4>
-                            <p class="card-text">{{card.description}}</p>
-                            <button type="submit" class="btn btn-primary" (click)="sendDetails(card.name,card.gitRep);">Install</button>
+                            <h4 class="card-title">{{module}}</h4>
+                            <p class="card-text">{{module.description}}</p>
+                            <button type="submit" class="btn btn-primary" (click)="sendDetails(module.name,module.gitRep);">Install</button>
                         </div>
                     </div>
                     <!-- Card -->
@@ -25,4 +25,3 @@
     </div>
     <!-- End Row -->
         
-<myprofile></myprofile>
